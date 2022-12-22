@@ -1,13 +1,15 @@
+const button = document.querySelector('button');
 const container = document.getElementById('container');
 
-const divs = [];
+button.addEventListener('click', () => {
+    let numSquares = parseInt(prompt("How many squares in the Sketch Pad"));
+    createSketchPad(numSquares);
+})
 
-for (let i = 1; i <= 16; i++) {
-    let div = document.createElement('div');
-    div.classList.add('square');
-    divs.push(div);
-}
-
-for (let i = 0; i < divs.length; i++) {
-    container.appendChild(divs[i]);
+function createSketchPad(numSquares) {
+    for (let i = 1; i <= numSquares * 2; i++) {
+        let div = document.createElement('div');
+        div.classList.add('square');
+        container.appendChild(div);
+    }
 }

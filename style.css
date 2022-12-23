@@ -14,8 +14,13 @@ body {
     box-shadow: 0 0 5px black;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
+.column {
+    display: flex;
+    flex: 1;
+}
 .square {
-    border: 1px solid black;
+    flex: 1;
 }

@@ -2,10 +2,20 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
+    height: 800px;
+    width: 800px;
+    box-shadow: 0 0 5px black;
     display: flex;
-    height: 100%;
-    width: 100%;
+    flex-wrap: wrap;
+}
+
+.square {
+    border: 1px solid black;
 }

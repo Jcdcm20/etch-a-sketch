@@ -1,5 +1,6 @@
 function createSketchPad(numSquares) {
     const container = document.getElementById('container');
+    container.innerHTML = '';
     for (let i = 1; i <= numSquares; i++) {
         let column = document.createElement('div');
         column.classList.add('column');

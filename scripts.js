@@ -16,10 +16,12 @@ function createSketchPad(numSquares) {
 
     squares.forEach(square => {
         square.addEventListener('mouseover', () => {
-            square.style.backgroundColor = '#000000';
+            let color = document.querySelector('input').value;
+            square.style.backgroundColor = color;
         })
     })
 }
+
 
 
 createSketchPad(16);

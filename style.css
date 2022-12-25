@@ -3,9 +3,15 @@ body {
     padding: 0;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #container {

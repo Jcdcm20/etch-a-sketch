@@ -8,10 +8,18 @@ body {
     gap: 50px;
 }
 
-#options {
-    display: flex;
+.menu {
+    height: 500px;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.size {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #container {

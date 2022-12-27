@@ -22,9 +22,20 @@ function createSketchPad(numSquares) {
     })
 }
 
+const range = document.querySelector('.range');
+let value = 16;
+createSketchPad(value);
+range.addEventListener('mousemove', () => {{
+    let display = document.querySelector('.range-display')
+    let value = range.value;
+    display.innerText = `${value} X ${value}`;
+}})
 
+range.addEventListener('change', () => {
+    let value = range.value;
+    createSketchPad(value);
+})
 
-createSketchPad(16);
 
 const button = document.querySelector('button');
 button.addEventListener('click', () => {

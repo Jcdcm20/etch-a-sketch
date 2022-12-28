@@ -36,13 +36,7 @@ range.addEventListener('change', () => {
     createSketchPad(value);
 })
 
-
-const button = document.querySelector('button');
-button.addEventListener('click', () => {
-    
-    let numSquares = parseInt(prompt("How many squares in the Sketch Pad"));
-    if (numSquares > 100) {
-        numSquares = 100;
-    }
-    createSketchPad(numSquares);
+const clear = document.querySelector('.clear');
+clear.addEventListener('click', () => {
+    createSketchPad(value);
 })

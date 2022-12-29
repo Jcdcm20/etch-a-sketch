@@ -1,3 +1,10 @@
+const range = document.querySelector('.range');
+let value = range.value;
+let display = document.querySelector('.range-display');
+display.innerText = `${value} X ${value}`;
+let color = document.querySelector('.color-picker').value;
+console.log(color);
+
 function createSketchPad(numSquares) {
     const container = document.getElementById('container');
     container.innerHTML = '';
@@ -16,17 +23,13 @@ function createSketchPad(numSquares) {
 
     squares.forEach(square => {
         square.addEventListener('mouseover', () => {
-            let color = document.querySelector('input').value;
             square.style.backgroundColor = color;
         })
     })
 }
 
-const range = document.querySelector('.range');
-let value = 16;
 createSketchPad(value);
 range.addEventListener('mousemove', () => {{
-    let display = document.querySelector('.range-display')
     let value = range.value;
     display.innerText = `${value} X ${value}`;
 }})
@@ -38,5 +41,6 @@ range.addEventListener('change', () => {
 
 const clear = document.querySelector('.clear');
 clear.addEventListener('click', () => {
+    value = range.value;
     createSketchPad(value);
 })

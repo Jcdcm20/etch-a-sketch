@@ -14,11 +14,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+}
+
+.color-picker {
+    width: 100px;
+    height: 50px;
 }
 
 button {
     width: 100px;
-    padding: 15px;
+    height: 50px;
 }
 
 .size {
